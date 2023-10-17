@@ -579,7 +579,8 @@ public class DeployFileMojo extends AbstractDeployMojo {
         return true;
     }
 
-    private static final String ILLEGAL_VERSION_CHARS = "\\/:\"<>|?*[](){},";
+    // private static final String ILLEGAL_VERSION_CHARS = "\\/:\"<>|?*[](){},";
+    private static final String ILLEGAL_VERSION_CHARS = "\\/:\"<>|?*[]{},";
 
     /**
      * Returns {@code true} if passed in string is "valid Maven (simple. non range, expression, etc) version".
